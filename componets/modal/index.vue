@@ -35,9 +35,15 @@
 <style lang="scss">
 
     .modal {
-        position: absolute;
+        position: fixed;
+        top: calc(50% - 300px);
+
         width: 25%;
-        top: 50vh;
+        height: 300px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         &__wrapper {
             position: relative;
