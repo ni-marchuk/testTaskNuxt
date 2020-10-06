@@ -1,0 +1,218 @@
+@import "vars";
+@import "fonts";
+@import "mixins";
+@import "plugins";
+
+* {
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+figure {
+    margin: 0;
+}
+
+body {
+    position: relative;
+    display: flex;
+    max-height: 1000000px;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    color: $greyLight;
+    line-height: 1.4;
+    background-color: #fff;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: underline;
+    font-size: 14px;
+    
+    color: $red;
+    outline: none;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+li, ul {
+    cursor: default;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: 0;
+    background: none;
+    box-shadow: none;
+    cursor: pointer;
+    
+    padding: 0;
+}
+
+input {
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+input[type='text'],
+input[type='number'],
+textarea {
+    font-size: 16px !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.wide-container {
+    max-width: 1565px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    @include below($md-desktop) {
+        max-width: 100%;
+        padding: 0 40px;
+    }
+    
+    @include below($lg-tablet) {
+        padding: 0 30px;
+    }
+    
+    @include below($md-tablet) {
+        padding: 0 20px;
+    }
+    
+    @include below($lg-mobile) {
+        padding: 0 15px;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    //justify-content: center;
+    //align-items: center;
+    text-align: center;
+    max-width: 1172px;
+    width: 100%;
+    padding: 0;
+}
+
+.items-container {
+    max-width: 1565px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    @media screen and (max-width: $md-desktop) {
+        max-width: 1266px;
+    }
+    
+    @media screen and (max-width: $lg-tablet) {
+        padding: 0 30px;
+        max-width: 100%;
+    }
+    
+    @media screen and (max-width: $md-tablet) {
+        padding: 0 20px;
+    }
+    
+    @media screen and (max-width: $lg-mobile) {
+        padding: 0;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.h1 {
+    font-size: 36px;
+    font-family: $Bebas;
+    font-weight: 400;
+    color: $grey;
+}
+
+//animations
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .2s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+#__nuxt {
+    display: flex;
+    flex-grow: 1;
+    
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        max-height: 100%;
+    }
+}
+
+#__layout {
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .2s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
