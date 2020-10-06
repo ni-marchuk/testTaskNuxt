@@ -1,8 +1,8 @@
 {
-  "name": "admin.true-food",
+  "name": "testNuxtProject",
   "version": "1.0.0",
   "description": "My transcendent Nuxt.js project",
-  "author": "Andrew Glotov",
+  "author": "MarchukNikita",
   "private": true,
   "scripts": {
     "dev": "nuxt",

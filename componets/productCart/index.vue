@@ -47,7 +47,7 @@
 
         width: 100%;
         max-width: 250px;
-        margin: 0 20px 20px 0;
+        margin: 0 10px 20px 10px;
         padding: 10px;
 
         background: #FCFCFC;
