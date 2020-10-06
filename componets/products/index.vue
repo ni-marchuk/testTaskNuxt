@@ -95,7 +95,6 @@
 
                     this.$store.commit('EDIT_PRODUCT', editData);
 
-                    this.isOpenModal = false;
                     this.modalClose();
                 }
 

@@ -5,7 +5,7 @@
                 <p class="productCart__id">{{product.id}}</p>
                 <p class="productCart__name">{{product.name}}</p>
             </div>
-            <img class="productCart__image" :src="product.image_url"/>
+            <img class="productCart__image" :src="product.image_url ? product.image_url : 'default.svg'"/>
             <p class="productCart__description">{{product.description}}</p>
             <p class="productCart__brewersTips">{{product.brewers_tips}}</p>
             <div class="productCart__controls">

@@ -38,7 +38,7 @@
         position: fixed;
         top: calc(50% - 300px);
 
-        width: 25%;
+        width: 300px;
         height: 300px;
 
         display: flex;
